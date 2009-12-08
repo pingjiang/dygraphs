@@ -1,6 +1,55 @@
+(PROJECT HAS BEEN MOVED TO GITHUB: http://github.com/danvk/dygraphs)
+
 dygraphs JavaScript charting library
 Copyright (c) 2006-, Dan Vanderkam.
 http://code.google.com/p/dygraphs/
+
+The dygraphs JavaScript library produces produces interactive, zoomable charts of time series.
+
+Features
+- Plots time series without using an external server or Flash
+- Supports multiple data series
+- Supports error bands around data series
+- Displays values on mouseover
+- Interactive zoom
+- Adjustable averaging period
+- Customizable click-through actions
+- Compatible with the Google Visualization API
+
+Caveats
+- Requires Firefox 1.5+ or Safari/WebKit? 1.3+.
+- Internet Explorer is poorly supported.
+
+Demo
+For a gallery and documentation, see http://danvk.org/dygraphs/
+
+Minimal Example
+<html>
+<head>
+<script type="text/javascript" src="dygraph-combined.js"></script>
+</head>
+<body>
+<div id="graphdiv"></div>
+<script type="text/javascript">
+  g = new DateGraph(
+        document.getElementById("graphdiv"),  // containing div
+        "Date,Temperature\n" +                // the data series
+        "2008-05-07,75\n" +
+        "2008-05-08,70\n" +
+        "2008-05-09,80\n";
+        }
+      );
+</script>
+</body>
+</html>
+
+License(s)
+dygraphs uses:
+ - MochiKit (MIT License)
+ - PlotKit (BSD License)
+ - excanvas.js (Apache License)
+
+dygraphs is available under the MIT license, included in LICENSE.txt.
 
 The dygraphs JavaScript library produces produces interactive, zoomable charts of time series.
 
